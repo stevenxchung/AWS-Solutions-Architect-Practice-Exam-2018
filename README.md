@@ -1,1 +1,3 @@
 # AWS-Solutions-Architect-Practice-Exam-2018
+
+Here will be notes from the 2018 AWS SAA practice exams, lessons learned, etc...
