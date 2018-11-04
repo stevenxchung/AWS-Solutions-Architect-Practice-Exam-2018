@@ -1,6 +1,6 @@
 # Practice Exam 1
 
-Questions to review:
+Topics to review:
 
 1. The EC2-Classic platform does not retain its associated Elastic IP addresses when the EBS-backed EC2 instance is stopped
 
