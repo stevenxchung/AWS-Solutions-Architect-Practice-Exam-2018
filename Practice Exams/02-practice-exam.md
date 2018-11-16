@@ -54,3 +54,50 @@ Topics to review:
 16. Security Groups usually control the list of ports that are allowed to be used by your EC2 instances and the NACLs control which network or list of IP addresses can connect to your whole VPC.
 
 17. To route domain traffic to an ELB load balancer, use Amazon Route 53 to create an alias record that points to your load balancer. An alias record is a Route 53 extension to DNS. It's similar to a CNAME record, but you can create an alias record both for the root domain, such as tutorialsdojo.com, and for subdomains, such as portal.tutorialsdojo.com. Use alias with type "AAAA" or "A" record set.
+
+18. Cold HDD volumes provide low-cost (lowest cost HDD) magnetic storage that defines performance in terms of throughput rather than IOPS. This means Cold HDD volumes are ideal for large, sequential cold-data workloads and data that is infrequently accessed.
+
+19. To increase fault tolerance of the connection to the VPC in the private subnet (VPC peered with another VPC in a public subnet):
+  * You can establish a hardware VPN over the internet and the on-premise network
+  * Establish another AWS DC connection and a private virtual interface in the same AWS region
+  * Note that there is no edge to edge routing in VPC peering (cannot use the public VPC to extend the private VPC in this scenario)
+
+20. You can manage the following in an IAM dashboard:
+  * Users
+  * Groups
+  * Identity Providers
+  * Policies
+
+21. The best way to implement a bastion host is to create a small EC2 instance which should only have a security group from a particular IP address for maximum security. We use a small instance rather than a large one because this host will only act as a jump server to connect to other instances in your VPC and nothing else. Hence, there is no point of allocating a large instance simply because it doesn't need that much computing power to process SSH (port 22) or RDP (port 3389) connections.
+
+22. Steps when backing up a database hosted on an EC2 instance backed by EBS volumes congifured in a RAID array:
+  * Stop all apps from writing to the RAID array
+  * Flush all caches to the disk
+  * Confirm that the associated EC2 instance is no longer writing to the RAID array by freezing the file system, unmounting the RAID array, and even shutting down the EC2 instance
+  * Take a snapshot of each EBS volume in the array only after all disk related activity is stopped
+
+23. You can back up the data on your Amazon EBS volumes to Amazon S3 by taking point-in-time snapshots. Snapshots are incremental backups, which means that only the blocks on the device that have changed after your most recent snapshot are saved. This minimizes the time required to create the snapshot and saves on storage costs by not duplicating data. When you delete a snapshot, only the data unique to that snapshot is removed. Each snapshot contains all of the information needed to restore your data (from the moment the snapshot was taken) to a new EBS volume.
+
+24. EBS facts:
+  * When you create an EBS volume in an AZ, it is automatically replicated within that zone to prevent data loss due to failure of any single hardware component
+  * EBS volumes are off-instance storage that can persist independently from the life of an instance
+  * EBS volumes support live configuration while in production (allows you to modify volume type, size, IOPS capacity, etc.)
+  * EBS provides the ability to create snapshots and write a copy of the data to S3
+
+25. Key features of API gateway:
+  * You can run multiple versions of the same API
+  * You can run your APIs without any servers (Lambda)
+  * You pay only for the API calls you receive and the amount of data transferred out
+
+26. EC2 instances with the same auto scaling group behind the ELB are nore reachable via URL to the ELB, try attaching an IGW to the VPC and route it to the subnet.
+
+27. Using SWF and SQS can help decouple the architecture for applications which use AWS and on-premise servers.
+
+28. You can use Amazon Data Lifecycle Manager (Amazon DLM) to automate the creation, retention, and deletion of snapshots taken to back up your Amazon EBS volumes.
+
+29. For auto scaling the cooldown period:
+  * Is configurable
+  * Default value is 5 minutes or 300 seconds
+  * Ensures that the auto scaling group does not launch or terminate EC2 instances before the previous scaling activity takes effect
+
+30. A minimal verion of an environment always running in the cloud in Disaster Recovery -> Pilot light.
