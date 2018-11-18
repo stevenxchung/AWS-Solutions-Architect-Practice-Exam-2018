@@ -47,3 +47,7 @@ Athena helps you analyze unstructured, semi-structured, and structured data stor
   * **insufficient-data** -> Checks in progress
 
 18. Integrating AWS IAM with an on-premise LDAP directory service -> Develop an on-premise custom identity broker app and use STS to issue short-lived AWS credentials.
+<div align="center">
+  <img src="4-1-IAM-LDAP.jpg">
+  <h3>Figure 4-1. LDAP Identity Federation AWS IAM Solution</h3>
+</div>
