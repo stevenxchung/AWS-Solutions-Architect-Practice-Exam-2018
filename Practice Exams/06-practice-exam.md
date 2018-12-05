@@ -41,6 +41,42 @@ Topics to review:
   * SRV (service locator)
   * TXT (text record)
 
-  9. Mobile app using OpenID Connect compatible identity provider -> AWS STS with Web Identity Federation
+9. Mobile app using OpenID Connect compatible identity provider -> AWS STS with Web Identity Federation
 
-  10. Problems connecting to EC2 with RDP (already has public IP, IGW, and routes) -> Adjust security group to allow traffic from port 3389
+10. Problems connecting to EC2 with RDP (already has public IP, IGW, and routes) -> Adjust security group to allow traffic from port 3389
+
+11. Benefits of adding multi-AZ deployments in AWS RDS:
+  * Increased database availability in the case of system upgrades like OS patching or DB instance scaling
+  * It makes the data fault-tolerant to an AZ failure
+
+12. You can send log data to CloudWatch Logs from EC2 by using the CloudWatch Logs agent. The CloudWatch Logs agent is comprised of the following components:
+  * A plug-in to the AWS CLI that pushes log data to CloudWatch Logs
+  * A script (daemon) that initiates the process to push data to CloudWatch Logs
+  * A cron job that ensures that the daemon is always running
+
+13. Business division autonomy + cost oversight from IT:
+  * Enable IAM cross-account access for all IT admins
+  * Use AWS Consolidated Billing by creating AWS organizations to link the divisions' accounts to a parent corporate account
+
+14. How can you improve the availability of your Aurora database to prevent any unnecessary downtime of the online portal -> Amazon Aurora Replicas
+
+15. Different types of IAM identities:
+    * Users
+    * Roles
+    * Groups
+
+16. Elastic web tier services:
+  * ELB
+  * EC2
+  * Auto Scaling
+
+17. What does a new IAM User need to be able to make API calls? A set of access keys
+
+18. VPC feature that allows the IPv6 EC2 instance to communicate to the internet but prevents inbound traffic -> Egress-only IGW (egress-only Internet gateway is a horizontally scaled, redundant, and highly available VPC component that allows outbound communication over IPv6 from instances in your VPC to the Internet, and prevents the Internet from initiating an IPv6 connection with your instances, for IPv4 user NAT gateway instead)
+
+19. IAM user access URL: https://<Account Id>.signin.aws.amazon.com/console/
+
+20. Services which can be used for session management:
+  * ElastiCache
+  * AWS RDS
+  * DynamoDB
