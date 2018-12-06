@@ -61,9 +61,9 @@ Topics to review:
 14. How can you improve the availability of your Aurora database to prevent any unnecessary downtime of the online portal -> Amazon Aurora Replicas
 
 15. Different types of IAM identities:
-    * Users
-    * Roles
-    * Groups
+  * Users
+  * Roles
+  * Groups
 
 16. Elastic web tier services:
   * ELB
@@ -80,3 +80,4 @@ Topics to review:
   * ElastiCache
   * AWS RDS
   * DynamoDB
+
