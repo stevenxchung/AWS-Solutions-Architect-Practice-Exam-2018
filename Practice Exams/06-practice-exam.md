@@ -80,4 +80,3 @@ Topics to review:
   * ElastiCache
   * AWS RDS
   * DynamoDB
-
