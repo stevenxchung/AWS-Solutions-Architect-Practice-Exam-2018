@@ -80,3 +80,20 @@ Topics to review:
   * ElastiCache
   * AWS RDS
   * DynamoDB
+
+21. Secure connection between the client and bank-end instances:
+  * HTTPS
+  * SSL
+
+22. Connecting infrastructure from on-premise to AWS:
+  * IPsec VPN
+  * AWS Direct Connect
+  * AWS VPN CloudHub
+
+23. You can use path conditions to define rules that forward requests to different target groups based on the URL in the request (also known as path-based routing)
+
+24. If Cache-Control max-age directive is set to a low value, commonly requested objects will not be stored in CloudFront cache for long
+
+25. Although the typical range for database block size is 2 KB to 32 KB, Redshift uses a block size of 1MB for columnar storage
+
+26. AWS Elastic Beanstalk stores application files and server log files in S3
