@@ -29,3 +29,17 @@ Mega Quiz 1 Review
 14. You can now scale the storage of RDS for SQL Server as of 2017
 
 15. Provisioned IOPS RDS -> OLTP
+
+16. To run a DB on an EC2 use EBS
+
+17. You cannot move a Reserved EC2 instance from one region to another
+
+18. When creating a new security group all inbound traffic is denied while all outbound traffic is allowed by default
+
+19. AWS RDS Engine Types:
+    * Aurora
+    * PostgreSQL
+    * MySQL
+    * MariaDB
+    * Oracle
+    * SQL Server
