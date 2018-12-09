@@ -13,3 +13,19 @@ Mega Quiz 1 Review
 6. You cannot access the OS for RDS instances
 
 7. Opening port 22 to 0.0.0.0/0 CIDR is a massive security risk
+
+8. Manage your EC2 instances with tags
+
+9. AZs are distinct zones within a region which are isolated from failures
+
+10. RDS Aurora stores 6 copies of data by default
+
+11. Maximum RDS retention period -> 35 days
+
+12. Automated backups are enabled by default for a new DB instance
+
+13. RDS does not support increasing storage on a SQL Server DB instance
+
+14. You can now scale the storage of RDS for SQL Server as of 2017
+
+15. Provisioned IOPS RDS -> OLTP
