@@ -70,7 +70,7 @@ Topics to review:
 
 21. The best way to implement a bastion host is to create a small EC2 instance which should only have a security group from a particular IP address for maximum security. We use a small instance rather than a large one because this host will only act as a jump server to connect to other instances in your VPC and nothing else. Hence, there is no point of allocating a large instance simply because it doesn't need that much computing power to process SSH (port 22) or RDP (port 3389) connections.
 
-22. Steps when backing up a database hosted on an EC2 instance backed by EBS volumes congifured in a RAID array:
+22. Steps when backing up a database hosted on an EC2 instance backed by EBS volumes configured in a RAID array:
   * Stop all apps from writing to the RAID array
   * Flush all caches to the disk
   * Confirm that the associated EC2 instance is no longer writing to the RAID array by freezing the file system, unmounting the RAID array, and even shutting down the EC2 instance
@@ -89,7 +89,7 @@ Topics to review:
   * You can run your APIs without any servers (Lambda)
   * You pay only for the API calls you receive and the amount of data transferred out
 
-26. EC2 instances with the same auto scaling group behind the ELB are nore reachable via URL to the ELB, try attaching an IGW to the VPC and route it to the subnet.
+26. EC2 instances with the same auto scaling group behind the ELB are more reachable via URL to the ELB, try attaching an IGW to the VPC and route it to the subnet.
 
 27. Using SWF and SQS can help decouple the architecture for applications which use AWS and on-premise servers.
 
@@ -100,4 +100,4 @@ Topics to review:
   * Default value is 5 minutes or 300 seconds
   * Ensures that the auto scaling group does not launch or terminate EC2 instances before the previous scaling activity takes effect
 
-30. A minimal verion of an environment always running in the cloud in Disaster Recovery -> Pilot light.
+30. A minimal version of an environment always running in the cloud in Disaster Recovery -> Pilot light.
