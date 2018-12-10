@@ -4,7 +4,7 @@ Topics to review:
 
 1. The retention period for a one-minute datapoint in AWS CloudWatch is 15 days.
 
-2. If you are note able to connect to the web server using your browser:
+2. If you are not able to connect to the web server using your browser:
   * Check the security group rules
   * Check the route table
 
