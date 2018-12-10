@@ -6,7 +6,7 @@ Mega Quiz 1 Review
 
 3. To allow EC2 to access other resources such as S3, use IAM roles
 
-4. EBS -> Elastic Blcok Storage
+4. EBS -> Elastic Block Storage
 
 5. Vulnerability scans require notifying AWS first
 
