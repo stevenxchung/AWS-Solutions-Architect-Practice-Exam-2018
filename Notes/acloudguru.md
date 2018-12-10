@@ -37,9 +37,9 @@ Mega Quiz 1 Review
 18. When creating a new security group all inbound traffic is denied while all outbound traffic is allowed by default
 
 19. AWS RDS Engine Types:
-    * Aurora
-    * PostgreSQL
-    * MySQL
-    * MariaDB
-    * Oracle
-    * SQL Server
+  * Aurora
+  * PostgreSQL
+  * MySQL
+  * MariaDB
+  * Oracle
+  * SQL Server
