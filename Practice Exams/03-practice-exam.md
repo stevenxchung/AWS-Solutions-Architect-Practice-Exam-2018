@@ -45,7 +45,7 @@ Topics to review:
   * S3 is a simple key-based object store
   * The largest object that can be uploaded in a single PUT is 5 GB
 
-13. You are limited to running a total of 20 On-Demand instances across the instnace family. Additionally, if the maximum size of your Auto Scaling group has been reached, it would not create any new EC2 instance.
+13. You are limited to running a total of 20 On-Demand instances across the instance family. Additionally, if the maximum size of your Auto Scaling group has been reached, it would not create any new EC2 instance.
 
 14. When an EC2 instance is terminated:
   * The root device volume is deleted by default
