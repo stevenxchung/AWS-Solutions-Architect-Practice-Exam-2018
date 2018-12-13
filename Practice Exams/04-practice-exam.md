@@ -16,7 +16,7 @@ Topics to review:
 
 7. Acts as a firewall that controls the traffic allowed to reach one or more instances -> Security group.
 
-8. Automated way to perform configuration tasks and run start scripts after the instance starts -> User data
+8. Automated way to perform configuration tasks and run start scripts after the instance starts -> User data.
 
 9. If something is being processed twice where required once try using AWS SWF.
 
@@ -52,18 +52,18 @@ Athena helps you analyze unstructured, semi-structured, and structured data stor
   <h3>Figure 4-1. LDAP Identity Federation AWS IAM Solution</h3>
 </div>
 
-19. AWS Step Functions provides serverless orchestration for modern applications. Orchestration centrally manages a workflow by breaking it into multiple steps, adding flow logic, and tracking the inputs and outputs between the steps. As your applications execute, Step Functions maintains application state, tracking exactly which workflow step your application is in, and stores an event log of data that is passed between application components. That means that if networks fail or components hang, your application can pick up right where it left off
+19. AWS Step Functions provides serverless orchestration for modern applications. Orchestration centrally manages a workflow by breaking it into multiple steps, adding flow logic, and tracking the inputs and outputs between the steps. As your applications execute, Step Functions maintains application state, tracking exactly which workflow step your application is in, and stores an event log of data that is passed between application components. That means that if networks fail or components hang, your application can pick up right where it left off.
 
-20. DynamoDB auto scaling uses the AWS Application Auto Scaling service to dynamically adjust provisioned throughput capacity on your behalf, in response to actual traffic patterns. This enables a table or a global secondary index to increase its provisioned read and write capacity to handle sudden increases in traffic, without throttling. When the workload decreases, Application Auto Scaling decreases the throughput so that you don't pay for unused provisioned capacity
+20. DynamoDB auto scaling uses the AWS Application Auto Scaling service to dynamically adjust provisioned throughput capacity on your behalf, in response to actual traffic patterns. This enables a table or a global secondary index to increase its provisioned read and write capacity to handle sudden increases in traffic, without throttling. When the workload decreases, Application Auto Scaling decreases the throughput so that you don't pay for unused provisioned capacity.
 
-21. Disaster recovery plan for Redshift during regional outage -> Enable cross-region snapshots copy in AWS Redshift
+21. Disaster recovery plan for Redshift during regional outage -> Enable cross-region snapshots copy in AWS Redshift.
 
-22. When failing over RDS flips the CNAME in Route 53 for your DB instance to point to the standby which will become the new primary
+22. When failing over RDS flips the CNAME in Route 53 for your DB instance to point to the standby which will become the new primary.
 
 23. Ensuring a fault-tolerant and highly available architecture:
   * EC2 instances placed in different Availability Zones are both logically and physically separated, and they provide an easy-to-use model for deploying your application across data centers for both high availability and reliability
   * Elastic Load Balancers (ELB) allow you to spread load across multiple Availability Zones and Amazon EC2 Auto Scaling groups for redundancy and decoupling of services. It provides high availability such that if one of its Availability Zones failed, it can direct the request to another healthy Availability Zone to avoid any down time
 
-24. AWS X-Ray allows you to trace and analyze user requests as they travel through your API Gateway APIs to the underlying services
+24. AWS X-Ray allows you to trace and analyze user requests as they travel through your API Gateway APIs to the underlying services.
 
-25. You can add multi-factor authentication (MFA) to a user pool to protect the identity of your users
+25. You can add multi-factor authentication (MFA) to a user pool to protect the identity of your users.
