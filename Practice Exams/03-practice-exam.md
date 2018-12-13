@@ -68,4 +68,4 @@ Topics to review:
 
 19. You are only billed when an EC2 is running.
 
-20. To setup a Linux bastion host which will allow access to the EC2 instances via clients connecting from the corporate external public IP; set up a security group inbound rule with TCP protocol on port range 22, source xxx.xx.xxx.xxx/32
+20. To setup a Linux bastion host which will allow access to the EC2 instances via clients connecting from the corporate external public IP; set up a security group inbound rule with TCP protocol on port range 22, source xxx.xx.xxx.xxx/32.
