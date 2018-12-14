@@ -1,6 +1,10 @@
 # EC2
 
-1. Do EBS volumes persist independently from the life of an EC2 instance?
+1. EBS volumes persist independently from the life of an EC2 instance ONLY if instructed to.
+
+2. You cannot delete a snapshot of an EBS volume that is used as the root device of a registered AMI.
+
+3. Using the console, you can add a role to an EC2 instance after the instance has been created.
 
 # Mega Quiz 1 Review
 
