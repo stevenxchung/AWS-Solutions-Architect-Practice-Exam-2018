@@ -82,3 +82,7 @@ Topics to review:
 You can back up the data on your Amazon EBS volumes to Amazon S3 by taking point-in-time snapshots. Snapshots are incremental backups, which means that only the blocks on the device that have changed after your most recent snapshot are saved. This minimizes the time required to create the snapshot and saves on storage costs by not duplicating data.
 
 When you delete a snapshot, only the data unique to that snapshot is removed. Each snapshot contains all of the information needed to restore your data (from the moment the snapshot was taken) to a new EBS volume.
+
+30. In event of an AWS Aurora failover:
+  * The Aurora Replica will flip the CNAME of the primary instance to point at the healthy replica which in turn will be promoted to the new pirmary
+  * If there are no Aurora Replicas, AWS Aurora will attempt to create a new DB instance in the same AZ as the original and if that fails it will try to create a new DB instance in another AZ
