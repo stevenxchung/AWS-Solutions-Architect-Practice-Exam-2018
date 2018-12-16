@@ -6,18 +6,18 @@ Topics to review:
   * EC2-Classic -> Private IPv4 address
   * EC2-VPC -> Static IPv4 address (does not change)
 
-2. Distribute requests to EC2s in multiple AZs -> Cross-zone load balancing
+2. Distribute requests to EC2s in multiple AZs -> Cross-zone load balancing.
 
-3. The recommended storage engine for MySQL is InnoDB and **not** MyISAM which is more heavy duty
+3. The recommended storage engine for MySQL is InnoDB and **not** MyISAM which is more heavy duty.
 
-4. Workloads that require high, sequential read and write access to very large data sets on local storage -> Storage Optimized Instances
+4. Workloads that require high, sequential read and write access to very large data sets on local storage -> Storage Optimized Instances.
 
-5. Lambda max execution duration per request -> 15 minutes
+5. Lambda max execution duration per request -> 15 minutes.
 
 6. An Elastic IP address doesn’t incur charges as long as the following conditions are true:
-  * The Elastic IP address is associated with an Amazon EC2 instance.
-  * The instance associated with the Elastic IP address is running.
-  * The instance has only one Elastic IP address attached to it.
+  * The Elastic IP address is associated with an Amazon EC2 instance
+  * The instance associated with the Elastic IP address is running
+  * The instance has only one Elastic IP address attached to it
 
 7. You can manage the following in IAM:
   * API Keys
@@ -41,7 +41,7 @@ Topics to review:
   * SRV (service locator)
   * TXT (text record)
 
-9. Mobile app using OpenID Connect compatible identity provider -> AWS STS with Web Identity Federation
+9. Mobile app using OpenID Connect compatible identity provider -> AWS STS with Web Identity Federation.
 
 10. Problems connecting to EC2 with RDP (already has public IP, IGW, and routes) -> Adjust security group to allow traffic from port 3389
 
@@ -58,7 +58,7 @@ Topics to review:
   * Enable IAM cross-account access for all IT admins
   * Use AWS Consolidated Billing by creating AWS organizations to link the divisions' accounts to a parent corporate account
 
-14. How can you improve the availability of your Aurora database to prevent any unnecessary downtime of the online portal -> Amazon Aurora Replicas
+14. How can you improve the availability of your Aurora database to prevent any unnecessary downtime of the online portal -> Amazon Aurora Replicas.
 
 15. Different types of IAM identities:
   * Users
@@ -72,7 +72,7 @@ Topics to review:
 
 17. What does a new IAM User need to be able to make API calls? A set of access keys
 
-18. VPC feature that allows the IPv6 EC2 instance to communicate to the internet but prevents inbound traffic -> Egress-only IGW (egress-only Internet gateway is a horizontally scaled, redundant, and highly available VPC component that allows outbound communication over IPv6 from instances in your VPC to the Internet, and prevents the Internet from initiating an IPv6 connection with your instances, for IPv4 user NAT gateway instead)
+18. VPC feature that allows the IPv6 EC2 instance to communicate to the internet but prevents inbound traffic -> Egress-only IGW (egress-only Internet gateway is a horizontally scaled, redundant, and highly available VPC component that allows outbound communication over IPv6 from instances in your VPC to the Internet, and prevents the Internet from initiating an IPv6 connection with your instances, for IPv4 user NAT gateway instead).
 
 19. IAM user access URL: https://<Account Id>.signin.aws.amazon.com/console/
 
@@ -90,10 +90,10 @@ Topics to review:
   * AWS Direct Connect
   * AWS VPN CloudHub
 
-23. You can use path conditions to define rules that forward requests to different target groups based on the URL in the request (also known as path-based routing)
+23. You can use path conditions to define rules that forward requests to different target groups based on the URL in the request (also known as path-based routing).
 
-24. If Cache-Control max-age directive is set to a low value, commonly requested objects will not be stored in CloudFront cache for long
+24. If Cache-Control max-age directive is set to a low value, commonly requested objects will not be stored in CloudFront cache for long.
 
-25. Although the typical range for database block size is 2 KB to 32 KB, Redshift uses a block size of 1MB for columnar storage
+25. Although the typical range for database block size is 2 KB to 32 KB, Redshift uses a block size of 1MB for columnar storage.
 
-26. AWS Elastic Beanstalk stores application files and server log files in S3
+26. AWS Elastic Beanstalk stores application files and server log files in S3.
