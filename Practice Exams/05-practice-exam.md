@@ -86,3 +86,7 @@ When you delete a snapshot, only the data unique to that snapshot is removed. Ea
 30. In event of an AWS Aurora failover:
   * The Aurora Replica will flip the CNAME of the primary instance to point at the healthy replica which in turn will be promoted to the new pirmary
   * If there are no Aurora Replicas, AWS Aurora will attempt to create a new DB instance in the same AZ as the original and if that fails it will try to create a new DB instance in another AZ
+
+31. CloudTrail encrypts all log files by default.
+
+32. Amazon Route 53 can help configure the DNS zone apex record to point to the load balance by creating an A record aliased to the load balancer DNS name.
