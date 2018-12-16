@@ -12,6 +12,7 @@ Topics to review:
   * Terminated or stopped by AWS within the first hour -> No charge
   * Terminated or stopped by AWS within the subsequent hour -> Charged to the nearest second
   * Terminate yourself -> Charged to the nearest second
+  * Note: you do not pay what you bid on spot prices, if your bid price is higher or lower than the spot price you will still pay the **spot price**
 
 5. A service that collect, process, and analyze data in real-time -> Amazon Kinesis.
 
