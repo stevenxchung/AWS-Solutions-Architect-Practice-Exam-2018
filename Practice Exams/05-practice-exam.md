@@ -90,3 +90,5 @@ When you delete a snapshot, only the data unique to that snapshot is removed. Ea
 31. CloudTrail encrypts all log files by default.
 
 32. Amazon Route 53 can help configure the DNS zone apex record to point to the load balance by creating an A record aliased to the load balancer DNS name.
+
+33. If you are looking for the most cost-effective EBS for non-critical business applications but are frequently accessed and require throughput-intensive workloads, try EBS Throughput Optimized HDDs.
