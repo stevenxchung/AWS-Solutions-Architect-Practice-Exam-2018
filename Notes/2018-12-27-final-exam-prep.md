@@ -35,3 +35,22 @@
   * Is a configurable setting for your ASG
 
 5. A customer gateway is a physical device or software on your side of the VPN connection. To create a VPN connection you must create a customer gateway and setup an internet-routable IP address (static).
+
+# Test 3 Final Review
+
+1. To store sensitive data on EBS or S3:
+  * Use EBS encryption
+  * S3 client-side via KMS keys or customer supplied master keys
+  * S3 server side via SSE-S3, SSE-KMS, SSE-C
+
+Additionally, it is recommended to:
+  * Configure CloudFront to deliver content over HTTPS using custom domain names with an SSL certificate
+  * Configure origin access identity to prevent S3 objects from being directly accessed publicly via S3 URL
+  * Configure access permissions with a bucket policy
+
+2. Glacier retrieval times are as follows:
+  * Expedited: 1-5 minutes (requires purchasing Provisioned Capacity)
+  * Standard: 3-5 hours
+  * Bulk: 5-12 hours (lowest cost retrieval option)
+
+3. Read replicas provide elasticity to your RDS database and improves performace of the primary database by taking workload from it (read replicas do not improve the actual read throughput on the primary instance however, watch out for wording).
