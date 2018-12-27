@@ -21,3 +21,17 @@
   * Page file utilization
   * Log collection
 
+# Test 2 Final Review
+
+1. EBS volumes are only available in the same AZ as the EC2 instance.
+
+2. If internet problems in the VPC can be isolated to a single instance try adding a public IP or EIP. If there is more than one instance involved the problem could be associated with route tables, IGW, NACL, or security groups.
+
+3. Snowball can move 50-80 TB whereas Snowball Edge can transfer up to 100 TB.
+
+4. The EC2 auto scaling cooldown period:
+  * Ensures that the ASG (auto scaling group) does not launch or terminate additional EC2 instances before the previous scaling activity takes effect
+  * Has a default value of 300 seconds or 5 minutes
+  * Is a configurable setting for your ASG
+
+5. A customer gateway is a physical device or software on your side of the VPN connection. To create a VPN connection you must create a customer gateway and setup an internet-routable IP address (static).
