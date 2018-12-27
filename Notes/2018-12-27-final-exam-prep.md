@@ -13,3 +13,11 @@
 4. EBS can encrypt data at rest, data moving between the volume and instance, snapshots, and volumes created from encrypted snapshots. Knowing this, there are ways you can protect your unencrypted EBS volume:
   * Apply encryption to the volume while copying the unencrypted volume as a snapshot, then from that encrypted snapshot restore to an encrypted EBS volume
   * Create a new encrypted EBS volume, move data to the new volume, and delete the old unencrypted volume
+
+5. There are no default EC2 CloudWatch metrics for:
+  * Memory utilization
+  * Disk swap utilization
+  * Disk space utilization
+  * Page file utilization
+  * Log collection
+
