@@ -59,11 +59,10 @@ Additionally, it is recommended to:
 
 1. Below are several of services which are not well known/recently added by AWS:
   * S3 Select - Provides ability to retrieve a subset of data from an object in S3 using simple SQL expressions
-  * Athena - **Serverless** interactice query service that makes it easy to analyze data in S3 using standard SQL
+  * Athena - **Serverless** interactive query service that makes it easy to analyze data in S3 using standard SQL
   * Redshift Spectrum - Allows you to directly run **complex** SQL queries against exabytes of unstructured data in S3
   * Neptune - A fully-managed graph database that makes it easy to build and run applications that work with highly connected datasets
   * X-Ray - Provides an end-to-end view of requests as they travel through your application, and shows a map of your application's underlying components
   * Glue - A fully-managed ETL (extract, transform, and load) service that makes it easy for customers to prepare and load their data for analytics
 
 2. In Cognito, you can add multi-factor authentication (MFA) to a user pool to protect the identity of your users. MFA adds a second authentication method that doesn't rely solely on user name and password. You can choose to use SMS text messages, or time-based one-time (TOTP) passwords as second factors in signing in your users. You can also use adaptive authentication with its risk-based model to predict when you might need another authentication factor. It's part of the user pool advanced security features, which also include protections against compromised credentials.
-
