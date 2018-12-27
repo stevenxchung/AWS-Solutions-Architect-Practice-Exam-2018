@@ -66,3 +66,7 @@ Additionally, it is recommended to:
   * Glue - A fully-managed ETL (extract, transform, and load) service that makes it easy for customers to prepare and load their data for analytics
 
 2. In Cognito, you can add multi-factor authentication (MFA) to a user pool to protect the identity of your users. MFA adds a second authentication method that doesn't rely solely on user name and password. You can choose to use SMS text messages, or time-based one-time (TOTP) passwords as second factors in signing in your users. You can also use adaptive authentication with its risk-based model to predict when you might need another authentication factor. It's part of the user pool advanced security features, which also include protections against compromised credentials.
+
+# Test 5 Final Review
+
+1. API Gateway is a fully-managed service which can create APIs that act as a front-door for applications to access data, business logic, or functionality from back-end services. All APIs created with API Gateway expose **HTTPS** endpoints only. API Gateway does not support unencrypted (HTTP) endpoints.
