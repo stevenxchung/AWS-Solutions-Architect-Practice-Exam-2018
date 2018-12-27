@@ -70,3 +70,13 @@ Additionally, it is recommended to:
 # Test 5 Final Review
 
 1. API Gateway is a fully-managed service which can create APIs that act as a front-door for applications to access data, business logic, or functionality from back-end services. All APIs created with API Gateway expose **HTTPS** endpoints only. API Gateway does not support unencrypted (HTTP) endpoints.
+
+# Test 6 Final Review
+
+1. The following protocols can help ensure that traffic is secure from the back-end instances to the ELB:
+  * HTTPS
+  * SSL
+
+2. CodeDeploy automates application **deployments** to EC2 instances, on-premise instances, or serverless Lambda functions. It allows you to rapidly release new features, update Lambda function versions, avoid downtime during application deployment, and handle the complexity of updating your applications, without many of the risks associated with error-prone manual deployments.
+
+2. Access keys are required to make API calls to AWS resources.
